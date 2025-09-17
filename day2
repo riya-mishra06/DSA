@@ -1,0 +1,51 @@
+// Function
+let fact = function(n){
+    let f = 1;
+    for(let i = 1; i<=n; i++){
+        f = f * i;
+    }
+    return f;
+}
+console.log(fact(4));
+
+
+let evenorodd = function(n){
+    if(n%2 == 0){
+        console.log("Your number is even")
+    }else{
+      console.log("Your number is odd")  
+    }
+}
+console.log(evenorodd(5));
+
+// PRIME OR NOT 
+let prime =  function(n){
+    let isPrime = true;
+    for(let i = 2;i<=n-1;i++){
+        if(n%i == 0){
+            isPrime = false;
+        }
+    }
+    return isPrime;
+}
+console.log(prime(2));
+
+// PRIME IN RANGE
+let prime = function(n){
+    let isPrime = true;
+    for(let i=2;i<=Math.sqrt(n);i++){
+        if(n%i==0){
+            return false;
+        }
+    }
+   return isPrime;
+}
+let rangeprime = function(n){
+     for(let i=2;i<=n;i++){
+     if(prime(i)){
+         console.log(i + " ")
+     }
+   }
+}
+
+console.log(rangeprime(20));

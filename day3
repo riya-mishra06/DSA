@@ -1,0 +1,14 @@
+// 2D array/
+
+let rows = Number(prompt("Enter a rows"));
+let cols = Number(prompt("Enter a columns"));
+
+let arr = [];
+
+for(let i = 0;i<rows;i++){
+    arr[i]=[];
+    for(let j=0;j<cols;j++){
+      arr[i][j] = Number(prompt(`Enter a element [${i}] [${j}]`));
+    }
+}
+console.log(arr);
