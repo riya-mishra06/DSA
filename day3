@@ -12,3 +12,121 @@ for(let i = 0;i<rows;i++){
     }
 }
 console.log(arr);
+
+// Searching in 2d array
+let arr = [ [10,20,30],
+            [40,50,60],
+             [70,80,90]];
+             
+
+
+let key = 90;
+let found = false;
+for(let i=0;i<arr.length;i++){
+    for(let j=0;j<arr[i].length;j++){
+        if(arr[i][j] === key){
+            console.log(`Your ${key} is on [${i}][${j}]`);
+            found = true;
+            break;
+        }
+    }
+    if(found)
+     break;
+}
+if(!found){
+console.log("key is not there");}
+
+
+//2D ARRAY  SPIRAL MATRIX
+let arr = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]];
+let SR = 0;
+let SC = 0;
+let ER = arr.length-1;
+let EC = arr[0].length-1
+
+while(SR <= ER && SC <= EC){
+    // start
+    for(let j = SC;j<=EC;j++){
+        console.log(arr[SR][j]+" ");
+    }
+    // right
+    for(let i = SR+1;i<=ER;i++){
+        console.log(arr[i][EC]+" ");
+    }
+    // bottom
+    for(let j = EC-1;j>=SC;j--){
+        console.log(arr[EC][j]+" ");
+    }
+    //LEFT
+    for(let i = ER-1;i>=SR+1;i--){
+        console.log(arr[i][SC]+" ");
+    }
+    SC++;
+    SR++;
+    EC--;
+    ER--;
+}
+
+// DIAGONAL SUM
+let arr = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]];
+let sum = 0;
+
+for(let i =0 ;i <arr.length;i++){
+    
+    for(let j = 0 ;j<arr[0].length;j++){
+        if(i==j){
+            sum+=arr[i][j]
+        } else if(i+j == arr.length-1){
+            sum+=arr[i][j]
+        }
+    }
+}
+ console.log(sum); 
+
+//  better way same sum
+
+
+ let arr = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]];
+function Diagonalsum(arr){
+   
+    let sum = 0;
+    for(let i =0 ;i <arr.length;i++){
+    sum+=arr[i][i];
+
+if(i  !== arr.length-i-1){
+    sum += arr[i] [arr.length-i-1];
+}   
+}
+console.log(sum);
+}
+
+Diagonalsum(arr);
+
+// Searching
+
+ let arr = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]];
+ let key = 32;
+function Searching(arr,key){
+    let row = 0;let col = arr[0].length-1;
+    
+    while(row<arr.length && col >=0){
+        if(arr[row][col] == key){
+            console.log("Founded key");
+            return true;
+        }else if(key < arr[row][col]){
+            row--;
+        }else{
+            row++;
+        }
+    }
+    console.log("Not found");
+    return false;
+}
+Searching(arr,key)
+
+
+
+
+
+
+
