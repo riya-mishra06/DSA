@@ -1,0 +1,86 @@
+QUESTION AND ANS
+
+
+
+
+
+// let age  = Number(prompt("Enter your age"));
+// let name = prompt("Enter you name")
+// alert(`${name} is ${age} year`);
+
+// let month = 4;
+// switch(month){
+//      case 1:console.log("Jan,Feb,march");
+//           break;
+//           case 2:console.log("april,may,june");
+//           break;
+//           case 3:console.log("july,aug,sep");
+//           break;
+//           case 4:console.log("oct,nov,dec");
+//           break;
+//           default:console.log("wrong");
+//           break;
+    
+// }
+
+// let str = "Appless";
+// if((str.charAt(0) == "A" || str.charAt(0) == "a" )&& str.length >= 5){
+//     console.log("Your String is golden");
+// }else{
+//     console.log("Not golden");
+// }
+
+// let a = 10;
+// let b=24,c=15;
+// if(a>b && a>c){
+//     console.log("A is largest");
+// } else if(b>c){
+//     console.log("b is largest");
+// } else{
+//     console.log("C is largest");
+// }
+
+
+
+// let num  = 47852;
+// let num2 = 33;
+
+// if(num%10 == num2%10){
+//     console.log('yes');
+// }else{
+//     console.log("no");
+// }
+
+
+
+
+// Question and ans
+
+let msg = "help!";
+let newmess = msg.trim().toUpperCase();
+console.log(newmess);
+
+// let msg = "help!";
+// console.log(msg.trim().toUpperCase());
+
+
+// let name = "ApnaCollege";
+// console.log(name.slice(4,9)) //COLL
+// console.log(name.indexOf("na")) //2
+// console.log(name.replace("Apna","Our")) //ourcollege
+
+// let name = "College";
+// console.log(name.replace("l","t"))
+
+
+
+
+
+
+
+
+
+
+
+
+
